@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-n67-dark font-sans antialiased;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-bold leading-tight;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply py-20 px-6 md:px-12 lg:px-20;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .label-eyebrow {
+    @apply text-n67-orange text-xs font-semibold uppercase tracking-widest;
+  }
+
+  .nav-link {
+    @apply text-white/80 hover:text-white text-sm font-medium transition-colors duration-200;
+  }
+}
